@@ -1,0 +1,94 @@
+#start_btn {
+	position: fixed;
+	top: 50%;
+	left: 45%;
+	font-size: 30pt;
+}
+
+div {
+	display: inline;
+}
+
+h1 {
+	text-align: center;
+	font-size: 60pt;
+}
+
+h2 {
+	font-weight: normal;
+	text-align: center;
+}
+
+#good_char {
+	text-decoration: underline;
+	float:left;
+	margin-left: 100px;
+}
+
+.finish_option_txt {
+	border: 2px solid black;
+	width: 300px;
+}
+
+#bad_char {
+	text-decoration: underline;
+	float: right;
+	margin-right: 100px;
+}
+
+#step4_txt {
+	float: right;
+	width: 400px;
+	margin-right: 300px;
+}
+
+.benefits {
+	float: right;
+	margin-right: 475px;
+}
+
+#lifting_img {
+	float: left;
+}
+#chair_txt {
+	float: right;
+	width: 500px;
+	text-wrap: normal;
+	margin-right: 100px;
+	margin-top: 100px;
+}
+
+.topic_pic {
+	height: 200px;
+	width: 200px;
+	margin-right: 10px;
+}
+#chair_img {
+	margin-top: 100px;
+	float: left;
+	height: 300px;
+	width: 280px;
+	margin-left: 100px;
+}
+
+.step_txt {
+	font-size: 30pt;
+}
+
+.next_btn {
+	font-size: 30pt;
+	position: fixed;
+	bottom: 10%;
+	right: 10%;
+}
+
+.text_box {
+	border: 2px solid black;
+	margin-right: 200px;
+	margin-bottom: 200px;
+}
+
+
+h5 {
+	text-align: center;
+}
