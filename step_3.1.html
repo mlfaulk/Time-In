@@ -3,17 +3,133 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<title>Time-In: Step 3.1</title>
-	<link rel="stylesheet" type="text/css" href="time_in.css"> 
-</head>
-<body>
-	 <p class="step_txt"> STEP 3.1: </p>
-	 <img id="chair_img" src="chair.png"></img>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>TimeIn</title>
+        <link rel="stylesheet" href="css/main.css">
+        
+        <!-- Bootstrap -->
+        <link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700|Shadows+Into+Light|Pacifico' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore|Yesteryear|Mr+Dafoe|Homemade+Apple|Rock+Salt' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Unkempt|Frijole|Gloria+Hallelujah|Architects+Daughter|Amatic+SC|Bangers' rel='stylesheet' type='text/css'>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="3.1">
+            <!-- Navigation Bar -->
+            <div class="row strip">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-1">
+                        <a href="step_2.html"><img class="arrow center-block" src="images/arrow-left.png"/></a>
+                    </div>
+                    <div class="col-md-1">
+                        <img class="icon green" src="images/relax.png"/>
+                    </div>
+                    <div class="col-md-1">
+                        <img class="icon orange" src="images/check.png"/>
+                    </div>
+                    <div class="col-md-1 lit">
+                        <img class="icon purple" src="images/character.png"/>
+                    </div>
+                    <div class="col-md-1">
+                        <img class="icon blue" src="images/strong.png"/>
+                    </div>
+                    <div class="col-md-1">
+                        <img class="icon pink" src="images/learn.png"/>
+                    </div>
+                    <div class="col-md-1">
+                        <img class="icon darkpink" src="images/done.png"/>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="step_3.html"><img class="arrow center-block" src="images/arrow-right.png"/></a>
+                    </div>
+                    <div class="col-md-2"></div>    
+            </div>
+            
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <p class="small-motto purple-text">Build Character</p>
+                    <p class="desc">You were sent to the recovery chair because of a character mess up. Let's work to build your character!</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row filler-most"></div>
+            <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-2">
+                    <a href="#3.2"><img class="arrow-scroll center-block" src="images/arrow-down.png"/></a>
+                </div>
+                <div class="col-md-5"></div>
+            </div>
+        </div>
+        
+        
+        <div id="3.2">
+            <div class="row filler"></div>
+            <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-2">
+                    <a href="#3.1"><img class="arrow-scroll center-block" src="images/arrow-up.png"/></a>
+                </div>
+                <div class="col-md-5"></div>
+            </div>
+            <div class="row filler"></div>
+            
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <p class="desc">Character is a person's disposition to think, feel, and act in ways that help oneself and others. Here are the 5 principles that define awesome character:</p>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
 
-	 <h2 id="chair_txt"> You were sent to the recovery chair because of a <b>character</b> mistake. </h2>
+        
+        
+        
+        
+        
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="js/jquery.foggy.min.js"></script>
+        <script src="js/jquery.foggy.min.js"></script>
+        <script src="js/jquery.localScroll.js" type="text/javascript"></script> 
+        <script src="js/jquery.scrollTo.js" type="text/javascript"></script> 
+        <script>
+            $(document).ready(function() {
+                $('body').localScroll({duration:500});
+                
+                $('img.arrow-scroll').hover(
+                    function(){
 
-	 
+                    $(this).css({
+                        "width": "55%",
+                        "height": "55%"
+                    });
+                },
+                function(){
+                    $(this).css({
+                         "width": "50%",
+                        "height": "50%"
+                    });
+                });
+                    
+                $(".imgWrap").hover(
+                function(){
 
-	 <a class="next_btn" href="step_3.2.html">NEXT</a>
+                    $("img", this).css({
+                        opacity: 0.6
+                    });
+
+                },
+                function(){
+                    $("img", this).css({
+                        opacity: 1.0
+                    });
+                }
+
+            );});
+        </script>
+        
 </body>
 </html>
